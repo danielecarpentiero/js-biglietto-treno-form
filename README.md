@@ -7,5 +7,5 @@
      - viene applicato uno sconto del 20%
    - Se età >= 65
      - viene applicato uno sconto del 40%
-   - Se 18 < età <= 65
+   - ALTRIMENTI (ossia Se 18 < età <= 65) 
       - viene applicato il prezzo intero
