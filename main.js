@@ -1,9 +1,9 @@
 "use strict";
 /* Chiedi quanti km deve viaggare l'utente */
-const travelDistance = +prompt("How far are you going to get? (insert km)");
+const travelDistance = "";
 
 /* chiedi l'età del passeggero */
-const passengerAge = +prompt("What's your age? (from 1 to 99)");
+const passengerAge = "";
 
 /* calcolo prezzo del biglietto in base ai km */
 const ticketPrice = travelDistance * 0.21;

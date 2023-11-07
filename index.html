@@ -13,7 +13,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1></h1>
+    <div class="container">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Nome e cognome</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Km da percorrere</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option selected>Seleziona la tua fascia d'età</option>
+                <option value="1">Minorenne</option>
+                <option value="2">Maggiorenne</option>
+              </select>
+              <label for="floatingSelect">Fascia d'età</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
