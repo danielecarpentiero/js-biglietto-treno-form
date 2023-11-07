@@ -1,3 +1,20 @@
+:root {
+  --color: white;
+}
+
 body {
   background-color: #b9144f;
+}
+
+.container {
+  background-color: var(--color);
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--color);
+}
+.container:nth-of-type(2),
+h2:last-of-type {
+  visibility: hidden;
 }

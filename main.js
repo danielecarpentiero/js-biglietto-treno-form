@@ -1,10 +1,16 @@
 "use strict";
+
+/* chiedi nome e cognome del passeggero */
+const userID = document.querySelector("#floatingInput");
 /* Chiedi quanti km deve viaggare l'utente */
-const travelDistance = "";
-
+const travelDistance = document.querySelector("#floatingInputValue");
 /* chiedi l'età del passeggero */
-const passengerAge = "";
-
+const userAge = document.querySelector("#floatingSelect");
+/* bottoni */
+const submit = document.getElementById(buttonSubmit);
+const reset = document.getElementById(buttonReset);
+/* appare il secondo contenitore */
+const appear = document.querySelector("body > div:nth-child(4)");
 /* calcolo prezzo del biglietto in base ai km */
 const ticketPrice = travelDistance * 0.21;
 
@@ -16,7 +22,11 @@ const juniorFinalPrice = ticketPrice - juniorDiscount;
 const seniorDiscount = (ticketPrice * 40) / 100;
 const seniorFinalPrice = ticketPrice - seniorDiscount;
 
-if (passengerAge < 18) {
+submit.addEventListener("click", function () {
+  appear.show();
+});
+
+if (selected) {
   console.log(
     `You're authorized to fare ${travelDistance} km. You are ${passengerAge} years old, so you have right to a discount of ${juniorDiscount.toFixed(
       2
